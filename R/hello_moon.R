@@ -1,18 +1,22 @@
-# Hello, moon!
-#
-# This is an example function named 'hello'
-# which prints 'Hello, moon!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Build and Reload Package:  'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
+#' @title Fonction pour dire bonjour à la Lune
+#'
+#' @description Cette fonction permet de faire les salutation à l'unique satellite de la Terre et de se présenter
+#'
+#' @param prenom prenom
+#'
+#' @return NULL
+#'
+#' @examples
+#'\dontrun{
+#' library(shinyML)
+#' longley2 <- longley %>% mutate(Year = as.Date(as.character(Year),format = "%Y"))
+#' shiny_h2o(data =longley2,x = c("GNP_deflator","Unemployed" ,"Armed_Forces","Employed"),
+#'   y = "GNP",date_column = "Year",share_app = TRUE,port = 3951)
+#'}
 
-hello_moon <- function() {
-  print("Hello, Moon!")
+#' @export
+
+
+hello_moon <- function(name) {
+  print(paste0("Hello, Moon! i'm ", name))
 }
